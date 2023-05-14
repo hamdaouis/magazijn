@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Artikel</title>
+    <script src="js/artikels.js" type="module" defer></script>
+    <link rel="icon" href="images/prularia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/prularia.css">
+</head>
+<body>
+<div class="pluraria-hoofd-image">
+    <img src="images/logo_prularia_zwart.png" alt="bedrijfslogo" id="hoofd-logo">
+</div>
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Bestellingen</a></li>
+        <li><a href="leveringen.html">Leveringen</a></li>
+        <li><a href="retours.html">Retours</a></li>
+        <li><a href="tv.html">TV</a></li>
+    </ul>
+</nav>
+<h1 class="titel" id="artikelNaam">Artikel</h1>
+<div class="artikelContainer">
+    <div class="artikelContainer1">
+        <dl>
+            <dt>ArtikelId:</dt>
+            <dd id="artikelId"></dd>
+            <dt>Ean:</dt>
+            <dd id="ean"></dd>
+
+            <dt>Beschrijving:</dt>
+            <dd id="beschrijving"></dd>
+            <dt>Prijs:</dt>
+            <dd id="prijs"></dd>
+            <dt>Gewicht in gram:</dt>
+            <dd id="gewicht"></dd>
+            <dt>Bestelpeil:</dt>
+            <dd id="bestelpeil"></dd>
+
+        </dl>
+
+    </div>
+    <div class="artikelContainer2">
+        <dl>
+            <dt>Voorraad:</dt>
+            <dd id="voorraad"></dd>
+            <dt>Minimum voorraad:</dt>
+            <dd id="minVoorraad"></dd>
+            <dt>Maximum voorraad:</dt>
+            <dd id="maxVoorraad"></dd>
+            <dt>Levertijd:</dt>
+            <dd id="levertijd"></dd>
+            <dt>Maximum aantal in magazijnplaats:</dt>
+            <dd id="maxInMagazijnPlaats"></dd>
+        </dl>
+    </div>
+</div>
+<div id="nietGevonden" class="fout" hidden>Artikel niet gevonden.</div>
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+<button id="terug">Terug</button>
+</body>
+</html>

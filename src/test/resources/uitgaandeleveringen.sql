@@ -1,0 +1,2 @@
+insert into uitgaandeleveringen(bestelId,vertrekDatum,aankomstDatum,trackingcode,klantId,uitgaandeLeveringsStatusId)
+values ((select bestelId from bestellingen where besteldatum = '2000-01-01 12:00:00' and bedrijfsnaam = 'test'),'2000-01-01','2000-02-01',"A123",1,1);

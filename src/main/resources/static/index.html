@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Bestellingen</title>
+    <script src="js/bestellingen.js" type="module" defer></script>
+    <link rel="icon" href="images/prularia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/prularia.css">
+</head>
+<body>
+<div class="pluraria-hoofd-image" id="pluraria-hoofd-image">
+    <img src="images/logo_prularia_wit.png" alt="bedrijfslogo">
+</div>
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Bestellingen</a></li>
+        <li><a href="leveringen.html">Leveringen</a></li>
+        <li><a href="retours.html">Retours</a></li>
+        <li><a href="tv.html">TV</a></li>
+    </ul>
+</nav>
+<h1 class="titel" id="titel">Bestelling <span id="bestelId"></span></h1>
+<main>
+<button type="button" class="collapsible" id="nieuw">Nieuw</button>
+<div id="bestelling" class="bestelling">
+<div class="container" id="container">
+
+    <table id="artikelen" hidden>
+        <thead>
+        <tr id="theadRow">
+            <th>Naam</th>
+            <th>Aantal</th>
+            <th>Locaties</th>
+            <!-- <th>Opgehaald</th> -->
+        </tr>
+        </thead>
+        <tbody id="artikelenBody" class="artikelenBody" disabled="false"></tbody>
+    </table>
+
+</div>
+
+<div class="button-container">
+    <!-- <button id="nieuw">Nieuw</button> -->
+    <button id="afgewerkt" disabled hidden>Afgewerkt</button>
+</div>
+
+</div>
+    <div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+    <div id="error" hidden><h4 id="errorText" ></h4></div>
+    <div id="bestellingAfgewerkt" hidden><h4>Bestelling afgewerkt</h4></div>
+</main>
+</body>
+</html>

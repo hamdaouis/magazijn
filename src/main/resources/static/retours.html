@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Retours</title>
+    <script src="js/retours.js" type="module" defer></script>
+    <link rel="icon" href="images/prularia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/prularia.css">
+</head>
+<body>
+<div class="pluraria-hoofd-image" id="pluraria-hoofd-image">
+    <img src="images/logo_prularia_wit.png" alt="bedrijfslogo" id="hoofd-logo">
+</div>
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Bestellingen</a></li>
+        <li><a href="leveringen.html">Leveringen</a></li>
+        <li><a href="retours.html">Retours</a></li>
+        <li><a href="tv.html">TV</a></li>
+    </ul>
+</nav>
+<h1 class="titel">Retour</h1>
+<main>
+    <div id="bestelling">
+        <input type="number" min="0" step="1" placeholder="BestelID" id="zoekId" required>
+        <p id="zoekIdFout" class="fout" hidden>Typ een geldige bestel ID</p>
+        <br>
+        <button id="verwerk">Verwerk</button>
+    </div>
+    <div id="bestellingInfo" hidden>
+        <dl id="voorEnAchternaam">
+            <dt>Voornaam:</dt>
+            <dd id="voornaam"></dd>
+            <dt>Familienaam:</dt>
+            <dd id="achternaam"></dd>
+        </dl>
+
+        <table id="retoursOverzicht">
+            <thead>
+
+            <tr>
+                <th>Ean</th>
+                <th>Beschrijving</th>
+                <th>Aantal</th>
+            </tr>
+            </thead>
+            <tbody id="retoursBody" class="retours-Body" disabled>
+
+            </tbody>
+        </table>
+        <label id="labelCheckbox" for="checkboxAfwerken">Beschadigd artikel?</label>
+        <input type="checkbox" name="" id="checkboxAfwerken">
+
+        <br>
+        <button id="verder">Verder gaan</button>
+
+
+    </div>
+    <div id="retourMagazijnPlaatsenDIV" hidden>
+        <table id="artikelen">
+            <thead>
+            <tr id="theadRow">
+                <th>Naam</th>
+                <th>Beschrijving</th>
+                <th>Aantal</th>
+                <th>Locatie</th>
+                <th>Gestockeerd</th>
+            </tr>
+            </thead>
+            <tbody id="artikelenBody" class="artikelenBody" disabled="false"></tbody>
+        </table>
+        <button id="afwerken" disabled>Afwerken</button>
+    </div>
+
+
+    <div id="messageDiv" hidden><h4 id="afwerkenMessage"></h4></div>
+
+    <div id="nietGevonden" class="fout" hidden><h4>Retour niet gevonden.</h4></div>
+    <button id="finishButton" hidden>Afwerken</button>
+
+    <button id="terug" hidden>Terug</button>
+    <div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+/*#ABD7A8 (zacht groen): achtergrondkleur voor banners en hoofdingen, tevens ook de hoofdkleur voor Prularia.*/
+/*#FFFFFF (wit): witruimtes en achtergrondkleur voor pagina’s, alsook de tekstkleur voor de delen waar het zacht groen als achtergrondkleur is gebruikt*/
+/*#000000 (zwart): tekstkleur op witte achtergronden*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    color: #282828;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 100px;
+    height: 100%;
+}
+#pluraria-hoofd-image{
+    background-color: #ABD7A8 !important;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.pluraria-hoofd-image img {
+    width: 276px;
+    height: 84px;
+}
+
+h1 {
+    background-color: #98d993;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+}
+.artikelContainer {
+    display: inline-flex;
+    width: 92%;
+    flex-direction: row;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.artikelContainer1 {
+    flex: 1;
+}
+
+.artikelContainer2 {
+    flex: 1;
+}
+
+.artikelContainer1 dt {
+    background-color: #c8e1c6;
+    max-width: 100%;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.artikelContainer1 dd {
+    margin: 5px;
+    padding: 3px;
+    font-size: 1.1em;
+}
+
+.artikelContainer2 dt {
+    background-color: #c8e1c6;
+    max-width: 100%;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.artikelContainer2 dd {
+    margin: 5px;
+    padding: 3px;
+    font-size: 1.1em;
+}
+
+dd, dt {
+    margin-left: 0;
+}
+
+dt {
+    margin-top: 0.5em;
+}
+
+
+dd {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+label {
+    cursor: pointer;
+}
+
+input {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+}
+
+nav ul {
+    background-color: white;
+    padding: 0.4em 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    font-weight: bold;
+    padding-left: 0.5em;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+nav li a:hover {
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5em 0;
+    list-style: none;
+    max-height: 50px;
+    background-color: #ABD7A8 !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    vertical-align: center;
+}
+
+.menu li {
+    width: 25%;
+    text-align: center;
+}
+
+.menu li a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    background-color: #98d993;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+    padding: 8px 16px;
+    border-radius: 12px;
+    align-content: space-around;
+}
+
+button #afgewerkt {
+    text-align: center;
+    background-color: #ABD7A8;
+}
+
+button:hover {
+    background-color: #6dad6f;
+}
+
+button:active, button:hover {
+    background: #6dad6f;
+}
+
+button:disabled {
+
+    color: black;
+
+    flex-direction: row;
+    align-items: center;
+
+    /* C1/F */
+
+    background: #F5F5F5;
+    cursor: not-allowed;
+}
+
+table {
+    height: 100%;
+    min-height: auto;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    text-align: left;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+table th:last-child {
+    text-align: center;
+}
+
+table td:last-child {
+    text-align: center;
+}
+
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+}
+tbody {
+    height: 100%;
+    min-height: auto;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+    vertical-align: top;
+    min-height: auto;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+th {
+    color: white;
+    background-color: #ABD7A8;
+}
+
+
+tr:nth-child(even) {
+    background-color: #FAFABA;
+}
+
+tr:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+
+.titel {
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+#aantal {
+    font-weight: bold;
+    color: #009879;
+}
+
+#terug {
+    margin: 20px;
+    margin-left: 4%;
+}
+
+/* Magazijnplaatsen embedded tabel */
+#locatie {
+    border-collapse: collapse;
+}
+#locatie table {
+    border-collapse: collapse;
+    max-width: 100px;
+    box-shadow: none;
+    margin: 0;
+    vertical-align: top;
+
+}
+#locatie table tbody{
+
+    vertical-align: top;
+
+}
+#locatie table tr{
+    text-align: left;
+    vertical-align: top;
+    background-color: inherit;
+    padding: 0;
+    border-bottom: none;
+
+
+}
+#locatie table tr td {
+    vertical-align: top;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+#locatie table tr td:last-child {
+    background-color: inherit;
+    border: none;
+    text-align: right;
+    vertical-align: top;
+    align-items: center;
+}
+#locatie tr:last-of-type {
+    border-bottom: 0;
+}
+
+.bestelling {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    min-height: content-box;
+    background-color: white;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.collapsible {
+    cursor: pointer;
+    border-radius: 3px;
+    width: 99%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #ABD7A8;
+    text-align: center;
+}
+
+
+.collapsible:after {
+    content: '\02795'; /* Unicode (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode (-) */
+}
+.active {
+    content: "\2796"; /* Unicode (-) */
+}
+
+main {
+    text-align: center;
+    width: 92%;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+#voorEnAchternaam {
+    text-align: left;
+}
+#retoursOverzicht {
+    margin: 20px auto 40px auto;
+}
+
+#bestellingInfo {
+    text-align: left;
+}
+
+#retourMagazijnPlaatsenDIV {
+    margin: auto;
+}

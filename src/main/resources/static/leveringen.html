@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Leveringen</title>
+    <link rel="stylesheet" href="css/leveringen.css">
+    <script src="js/leveringen.js" type="module" defer></script>
+</head>
+<body>
+<div class="pluraria-hoofd-image" id="pluraria-hoofd-image">
+    <img src="images/logo_prularia_wit.png" alt="bedrijfslogo" id="hoofd-logo">
+</div>
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Bestellingen</a></li>
+        <li><a href="leveringen.html">Leveringen</a></li>
+        <li><a href="retours.html">Retours</a></li>
+        <li><a href="tv.html">TV</a></li>
+    </ul>
+</nav>
+<h1 class="titel">Levering</h1>
+<main>
+<button type="button" class="collapsible" id="leveringCollaps">Levering</button>
+<div id="levering" class="levering">
+    <form class="form" id="leveringsForm" autocomplete="off">
+        <label for="leveranciers">Leveranciers:</label>
+        <div>
+            <input type="text" id="leveranciers" required>
+        </div>
+        <label for="bonnummer">Bonnummer: </label>
+        <div>
+            <input type="text" id="bonnummer" required>
+        </div>
+        <label for="datum">Leverbondatum: </label>
+        <div>
+            <input type="date" id="datum" max="" required>
+        </div>
+        <button id="verstuurLevering">Verstuur</button>
+        <button id="deleteLevering" hidden>Verwijder</button>
+    </form>
+</div>
+<button type="button" class="collapsible" id="leveringslijnCollaps">Artikelen</button>
+<div id="leveringslijn" class="leveringslijn">
+    <form id="leveringslijnForm" class="form" autocomplete="off">
+
+        <div class="container">
+
+            <div class="container-left" id="container-left">
+                <label for="ean">EAN codes:</label>
+                <div>
+                    <input type="text" id="ean" required>
+                </div>
+                <label for="goedgekeurd">Aantal goedgekeurd: </label>
+                <div>
+                    <input type="number" id="goedgekeurd" required min="1" step="1">
+                </div>
+                <label for="afgekeurd">Aantal afgekeurd: </label>
+                <div>
+                    <input type="number" id="afgekeurd" required min="0">
+                </div>
+                <button id="add">Voeg toe</button>
+                <div id="error" hidden><h4 id="errorText">Artikel werd al toegevoegd</h4></div>
+            </div>
+
+
+            <div id="container-right" class="container-right" hidden>
+                <table>
+                    <thead>
+                    <th>EAN</th>
+                    <th>Goedgekeurd</th>
+                    <th>Afgekeurd</th>
+                    </thead>
+                    <tbody id="leveringslijnen"></tbody>
+                </table>
+                <button id="verstuur">Verstuur</button>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+<div style="text-align: center"><h4 id="geregistreerd" hidden>Levering geregistreerd</h4></div>
+<button type="button" class="collapsible" id="overzichtCollaps">Overzicht</button>
+<div id="overzicht" class="overzicht">
+    <form id="overzichtForm" class="form" autocomplete="off" hidden>
+        <table id="artikelen">
+            <thead>
+            <tr id="theadRow">
+                <th>Naam</th>
+                <th>Beschrijving</th>
+                <th>Aantal</th>
+                <th>Locatie</th>
+                <th>Gestockeerd</th>
+            </tr>
+            </thead>
+            <tbody id="artikelenBody" class="artikelenBody" disabled="false"></tbody>
+        </table>
+        <button id="afwerken" disabled>Afwerken</button>
+    </form>
+</div>
+</main>
+</body>
+</html>

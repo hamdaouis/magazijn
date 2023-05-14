@@ -1,0 +1,292 @@
+/*#ABD7A8 (zacht groen): achtergrondkleur voor banners en hoofdingen, tevens ook de hoofdkleur voor Prularia.*/
+/*#FFFFFF (wit): witruimtes en achtergrondkleur voor pagina’s, alsook de tekstkleur voor de delen waar het zacht groen als achtergrondkleur is gebruikt*/
+/*#000000 (zwart): tekstkleur op witte achtergronden*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    color: #282828;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+#pluraria-hoofd-image{
+    background-color: #ABD7A8 !important;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.pluraria-hoofd-image img {
+    width: 276px;
+    height: 84px;
+    cursor: pointer;
+}
+
+h1 {
+    background-color: #98d993;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+}
+main {
+    width: 92%;
+    justify-content: center;
+    margin: 25px auto;
+}
+button {
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    background-color: #98d993;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+    padding: 8px 16px;
+    border-radius: 12px;
+    align-content: space-around;
+}
+
+button #afgewerkt {
+    text-align: center;
+    background-color: #ABD7A8;
+}
+
+
+button:hover {
+    background-color: #6dad6f;
+}
+
+button:active, button:hover {
+    background: #6dad6f;
+}
+
+button:disabled {
+
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    background: #F5F5F5;
+    cursor: not-allowed;
+}
+input {
+    font-family: sans-serif;
+}
+#levering input {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+nav ul {
+    background-color: white;
+    padding: 0.4em 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    font-weight: bold;
+    padding-left: 0.5em;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+nav li a:hover {
+ /*   text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: solid; */
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5em 0;
+    list-style: none;
+    max-height: 50px;
+    background-color: #ABD7A8 !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    vertical-align: center;
+}
+.menu li {
+    width: 25%;
+    text-align: center;
+}
+
+.menu li a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+td, th {
+    padding: 12px 15px;
+}
+table {
+    border-collapse: collapse;
+    margin: 0px 0 25px 0;
+    font-size: 1em;
+    text-align: left;
+    font-family: sans-serif;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+body th:last-child {
+    text-align: right;
+}
+th {
+    color: white;
+    background-color: #ABD7A8;
+}
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+}
+
+tbody td:last-child {
+    text-align: right;
+}
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+tr:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+
+
+
+.titel {
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+
+}
+
+.container-left {
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-left input {
+    min-width: 300px;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    box-sizing: border-box;
+}
+
+.container-right {
+    flex-grow: 1;
+    height: 100%;
+    margin: 0 0 10px 20px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.collapsible {
+    cursor: pointer;
+    border-radius: 3px;
+    width: 99%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #ABD7A8;
+}
+
+
+.collapsible:after {
+    content: '\02795'; /* Unicode (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode (-) */
+}
+.active {
+    content: "\2796"; /* Unicode (-) */
+}
+
+.levering {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.leveringslijn {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    background-color: white;
+    transition: max-height 0.2s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.overzicht {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    max-height: 0;
+    min-height: inherit;
+    transition: max-height 0.2s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+#suggesties {
+    box-sizing: border-box;
+    position: relative;
+    top: -16px;
+    width: 50%;
+}
+#suggesties div:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#suggesties div:hover {
+    background-color: #ABD7A8;
+}
